@@ -112,13 +112,6 @@ header p{
     width:30px;
     height:30px;
 }
-.content .record .active{
-    display:inline-block;
-}
-.content .record .inactive{
-    display:none;
-}
-
 .content refresh:hover{
     background:rgba(0, 0, 0, 0.155);
 }
@@ -199,11 +192,12 @@ header p{
         align-items:flex-end;
         height:110px;
     }
-    .content .refresh{
-        justify-content:flex-end;
-    }
+    
     .content .record{
         width: 100%;
+    }
+    .content .refresh{
+        margin:5px 0;
     }
 }
 @media screen and (max-width:350px){
