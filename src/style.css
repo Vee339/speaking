@@ -1,0 +1,216 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    
+    /* border:1px solid #0f0;*/
+}
+html{
+}
+body{
+    width:100%;
+    height:640px;
+    background: #FCE2DB;
+}
+#root{
+    width:100%;
+    height:100vh;
+}
+header{
+    color:#7A4495;
+}
+header h3{
+    font-size:60px;
+    font-family: 'Aboreto', cursive;
+    width:100%;
+    
+    margin-top:60px;
+    padding-right:10%;
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+}
+header p{
+    padding:0 10%;
+    font-family: 'Dancing Script', cursive;
+    font-size:25px;
+    font-weight:600;
+    text-align:right;
+}
+.content{
+    font-family: 'Poppins', sans-serif;
+    width:800px;
+    min-height:290px;
+    background: #fff;
+    box-shadow:4px 4px 8px rgba(0, 0, 0, 0.13),
+            inset 4px 4px 8px rgba(0, 0, 0, 0.058);
+    margin:100px auto 0;
+    padding:40px;
+    padding-left:80px;
+    border-radius:10px;
+}
+.content ul{
+    padding-left:40px;
+}
+.content ul li{
+    list-style-type:none;
+}
+.content .action{
+    width:100%;
+    height:70px;
+    display:flex;
+    align-items:center;
+    justify-content:flex-end;
+}
+.content .refresh{
+    width:50px;
+    height:50px;
+    margin:0 10px;
+    border:none;
+    cursor:pointer;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:33px;
+    color:#146356;
+}
+.content .record{
+    color: #7D1E6A;
+    background: transparent;
+    border:none;
+    width:50%;
+    height:60px;
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    outline:none;
+}
+.content .record .audio-recorder{
+    width:50px;
+    height:50px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.content .record .audio-recorder img{
+    width:100%;
+    height:100%;
+}
+.content .record .audio-recorder.recording{
+    background: #7A4495;
+    color:white;
+    width:100%;
+    height:50px;
+    object-fit: contain;
+}
+.content .record .audio-recorder.recording .audio-recorder-mic{
+    width:30px;
+    height:30px;
+}
+.content .record .audio-recorder.recording .audio-recorder-options{
+    width:30px;
+    height:30px;
+}
+.content .record .active{
+    display:inline-block;
+}
+.content .record .inactive{
+    display:none;
+}
+
+.content refresh:hover{
+    background:rgba(0, 0, 0, 0.155);
+}
+.content :is(.record, .refresh) img{
+    width:80%;
+    height:80%;
+    object-fit:cover;
+} 
+.recordings{
+    width:800px;
+    min-height:60px;  
+    margin-top:20px;
+    margin-left:200px;
+    padding:0 10px;
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    flex-wrap: wrap;
+    gap:20px;
+}
+
+@media screen and (max-width:1000px){
+
+    header h3{
+        font-size:55px;
+        padding:0;
+        justify-content:center;
+    }
+    header p{
+        padding:0;
+    }
+    .content{
+        width:600px;
+    }
+    .content .record{
+        width:70%;
+    }
+    .recordings{
+        width:90%;
+        margin:20px 0;
+    }
+}
+
+@media screen and (max-width:720px){
+    header h3{
+        font-size:40px;
+        margin-bottom:0;
+        padding-bottom:0;
+
+    }
+    header p{
+        font-size:20px;
+        margin-top:0;
+    }
+    .content{
+        width:80%;
+        padding:20px;
+    }
+    .content ul{
+        padding-left:20px;
+    }
+}
+@media screen and (max-width:500px){
+    header h3{
+        font-size:30px;
+    }
+    header p{
+        font-size:20px;
+    }
+    .content{
+        margin:50px auto;
+    }
+    .content ul li{
+        list-style-type:square;
+    }
+    .content .action{
+        flex-direction:column;
+        align-items:flex-end;
+        height:110px;
+    }
+    .content .refresh{
+        justify-content:flex-end;
+    }
+    .content .record{
+        width: 100%;
+    }
+}
+@media screen and (max-width:350px){
+    header h3{
+        font-size:20px;
+    }
+    header p{
+        font-size:15px;
+    }
+}
