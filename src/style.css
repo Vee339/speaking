@@ -107,10 +107,12 @@ header p{
 .content .record .audio-recorder.recording .audio-recorder-mic{
     width:30px;
     height:30px;
+    filter: invert(100%) sepia(5%) saturate(480%) hue-rotate(179deg) brightness(117%) contrast(78%);
 }
 .content .record .audio-recorder.recording .audio-recorder-options{
     width:30px;
     height:30px;
+    filter: invert(100%) sepia(5%) saturate(480%) hue-rotate(179deg) brightness(117%) contrast(78%);
 }
 .content refresh:hover{
     background:rgba(0, 0, 0, 0.155);

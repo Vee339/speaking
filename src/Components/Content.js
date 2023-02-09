@@ -49,6 +49,7 @@ function Content(){
 
   function renderQuestion(){
         setRefresh(refresh + 1)
+        
   }
 
 
